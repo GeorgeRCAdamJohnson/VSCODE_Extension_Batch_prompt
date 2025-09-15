@@ -1,0 +1,32 @@
+{
+  "name": "copilot-chat-batch-eval",
+  "displayName": "Copilot Chat Batch Evaluation",
+  "description": "A VS Code extension for batch evaluation of Copilot Chat responses.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:copilotChat.batchEvaluate"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copilotChat.batchEvaluate",
+        "title": "Copilot Chat: Batch Evaluate"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+  "watch": "tsc -watch -p ./"
+    
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+  "@types/vscode": "^1.80.0"
+  }
+}

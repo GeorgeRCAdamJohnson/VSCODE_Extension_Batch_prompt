@@ -1,0 +1,16 @@
+{
+  "name": "Copilot Chat Batch Evaluation",
+  "description": "Batch evaluation tool for Copilot Chat responses.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copilotChat.batchEvaluate",
+        "title": "Copilot Chat: Batch Evaluate"
+      }
+    ]
+  }
+}
